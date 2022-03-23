@@ -56,3 +56,27 @@ https://e-words.jp/w/%E3%83%AD%E3%82%AE%E3%83%B3%E3%82%B0.html#:~:text=%E3%83%AD
 ・DDL（データ定義言語）とは
 
 https://medium-company.com/ddl/#DDL-2
+
+・2.6　javax.persistenceパッケージ
+
+http://itdoc.hitachi.co.jp/manuals/link/cosmi_v0870/APR4/EU260052.HTM
+
+・アノテーション
+
+https://www.otsuka-shokai.co.jp/words/annotation.html
+
+・2.6.20　@GeneratedValue
+
+http://itdoc.hitachi.co.jp/manuals/link/cosmi_v0870/APR4/EU260072.HTM#ID00291
+
+・Javaプログラムにおけるlong型の使い方【初心者向け】
+
+https://techacademy.jp/magazine/18227
+
+・Javaのオーバーライドの基本と親子クラスの関係について知ろう
+
+https://www.bold.ne.jp/engineer-club/java-override#i
+
+・(第4回) テーブルのCRUD操作をするリポジトリインタフェースを作成【Spring Boot2で日記ウェブアプリ】
+
+https://it-jog.com/java/springbootdiaryweb/diaryrepository
