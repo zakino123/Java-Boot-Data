@@ -32,3 +32,27 @@ https://www.postgresql.jp/docs/9.2/sql-grant.html
 ・ロールにテーブルやビューなどに対する権限を追加する(GRANT)
 
 https://www.dbonline.jp/postgresql/role/index3.html#section2
+
+・Java標準ORMであるJPAとは【初心者向け】
+
+https://kohei.life/jpa/
+
+・アプリケーションプロパティ設定一覧
+
+https://spring.pleiades.io/spring-boot/docs/current/reference/html/application-properties.html
+
+・JDBCとは何か？
+
+https://atmarkit.itmedia.co.jp/ait/articles/0106/26/news001.html
+
+・【SQL】ステートメントとは？いまさら聞けないスクリプトとの違いを徹底解説。
+
+https://style.potepan.com/articles/26487.html#i
+
+・ロギング 【logging】
+
+https://e-words.jp/w/%E3%83%AD%E3%82%AE%E3%83%B3%E3%82%B0.html#:~:text=%E3%83%AD%E3%82%AE%E3%83%B3%E3%82%B0%E3%81%A8%E3%81%AF%E3%80%81%E8%B5%B7%E3%81%93%E3%81%A3%E3%81%9F,%E3%83%AD%E3%82%B0%E3%80%8D%EF%BC%88log%EF%BC%89%E3%81%A8%E3%81%84%E3%81%86%E3%80%82
+
+・DDL（データ定義言語）とは
+
+https://medium-company.com/ddl/#DDL-2
