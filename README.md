@@ -80,3 +80,15 @@ https://www.bold.ne.jp/engineer-club/java-override#i
 ・(第4回) テーブルのCRUD操作をするリポジトリインタフェースを作成【Spring Boot2で日記ウェブアプリ】
 
 https://it-jog.com/java/springbootdiaryweb/diaryrepository
+
+・final修飾子
+
+https://www.milk-island.net/document/java/kihon/n1/
+
+・SpringBoot入門 vol.8：DIを理解しよう
+
+https://learning-collection.com/springboot%E5%85%A5%E9%96%80-vol-8%EF%BC%9Adi%E3%82%92%E7%90%86%E8%A7%A3%E3%81%97%E3%82%88%E3%81%86/
+
+・インターフェース CrudRepository<T,ID>
+
+https://spring.pleiades.io/spring-data/commons/docs/current/api/org/springframework/data/repository/CrudRepository.html?is-external=true#findAll--
