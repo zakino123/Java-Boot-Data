@@ -92,3 +92,11 @@ https://learning-collection.com/springboot%E5%85%A5%E9%96%80-vol-8%EF%BC%9Adi%E3
 ・インターフェース CrudRepository<T,ID>
 
 https://spring.pleiades.io/spring-data/commons/docs/current/api/org/springframework/data/repository/CrudRepository.html?is-external=true#findAll--
+
+・RESTful APIのURI設計(エンドポイント設計)
+
+https://qiita.com/NagaokaKenichi/items/6298eb8960570c7ad2e9
+
+・URLとURIの違いとは！今更聞けないWebの基礎知識を解説します！
+
+https://www.geekly.co.jp/column/cat-webgame/1911_012/
