@@ -104,3 +104,19 @@ https://www.geekly.co.jp/column/cat-webgame/1911_012/
 ・Spring BootのRestControllerからHTMLを生成する方法
 
 https://salumarine.com/how-to-render-html-from-rest-controller-with-spring-boot-app/
+
+・Fetch API 試してみた。
+
+https://chaika.hatenablog.com/entry/2019/01/08/123000
+
+・Fetch の使用
+
+https://developer.mozilla.org/ja/docs/Web/API/Fetch_API/Using_Fetch
+
+・Ruby on Rails へ Fetch API で非同期通信を行う | Zenn | 北山淳也
+
+https://zenn.dev/junki555/articles/e119439e46a85e
+
+・Fetch API を使うときの適切なエラー処理方法 | Zenn | 北山淳也
+
+https://zenn.dev/junki555/articles/4ab67fc78ce64c
