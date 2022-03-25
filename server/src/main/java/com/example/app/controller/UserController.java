@@ -17,12 +17,12 @@ public class UserController {
     this.repository = repository;
   }
 
-  @RequestMapping("/")
-  public String user() {
-    return String.valueOf(repository.findAll());
-  }
+  // @RequestMapping("/")
+  // public String user() {
+  //   return String.valueOf(repository.findAll());
+  // }
 
-  @RequestMapping("/users")
+  @RequestMapping("/")
   public ModelAndView get(ModelAndView mav) {
     mav.addObject("target", "Thymeleaf");
     mav.setViewName("index");

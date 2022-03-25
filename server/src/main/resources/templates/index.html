@@ -31,12 +31,14 @@
       
       const button_post = document.getElementById('button_post');
       button_post.addEventListener('click',function(){
+        const user_data = { name: "post_name" }
 
         fetch('/users', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
-          }
+          },
+          body: JSON.stringify(user_data),
         })
         .then(function(response){
           const response_message = response.status + ':' + response.statusText
