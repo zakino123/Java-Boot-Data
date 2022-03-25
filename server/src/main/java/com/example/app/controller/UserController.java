@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.app.repository.UserRepository;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 public class UserController {
@@ -18,8 +19,14 @@ public class UserController {
 
   @RequestMapping("/")
   public String user() {
-    // valueofメソッド:String型の文字列として返す
-    // findAllメソッド:リポジトリの全てのインスタンスを返す
     return String.valueOf(repository.findAll());
   }
+
+  @RequestMapping("/users")
+  public ModelAndView get(ModelAndView mav) {
+    mav.addObject("target", "Thymeleaf");
+    mav.setViewName("index");
+    return mav;
+  }
+
 }
