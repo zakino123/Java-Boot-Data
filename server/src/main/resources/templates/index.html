@@ -27,11 +27,19 @@
           method: 'GET'
         })
         .then(function(response){
-          window.alert('Fetch GET!' + response.status);
+          if (!response.ok) {
+            console.error('response.ok:', response.ok);
+            console.error('response.status:', response.status);
+            console.error('response.statusText:', response.statusText);
+            throw new Error(response.statusText);
+          }
+          window.alert('情報を受信しました。');
         })
-        .catch(function(response){
-          window.alert('Fetch GET!' + response.status);
-        })
+        .catch(error => {
+          // ネットワークエラーでも !response.ok でもここで処理できる
+          console.error('エラーが発生しました', error);
+          window.alert('エラーが発生しました。');
+        });
       });
       
       const button_post = document.getElementById('button_post');
@@ -47,10 +55,19 @@
           },
           body: JSON.stringify(user_data),
         })
-        .then(function(response){
-          const response_message = response.status + ':' + response.statusText
-          console.log(response_message);
-          window.alert('response_message=' + response_message);
+        .then(response => {
+          if (!response.ok) {
+            console.error('response.ok:', response.ok);
+            console.error('response.status:', response.status);
+            console.error('response.statusText:', response.statusText);
+            throw new Error(response.statusText);
+          }
+          window.alert('情報を登録しました。');
+        })
+        .catch(error => {
+          // ネットワークエラーでも !response.ok でもここで処理できる
+          console.error('エラーが発生しました', error);
+          window.alert('エラーが発生しました。');
         });
       });
 
@@ -69,15 +86,19 @@
           },
           body: JSON.stringify(user_data),
         })
-        .then(function(response){
-          const response_message = response.status + ':' + response.statusText
-          console.log(response_message);
-          window.alert('response_message=' + response_message);
+        .then(response => {
+          if (!response.ok) {
+            console.error('response.ok:', response.ok);
+            console.error('response.status:', response.status);
+            console.error('response.statusText:', response.statusText);
+            throw new Error(response.statusText);
+          }
+          window.alert('情報を更新しました。');
         })
-        .catch(function(response){
-          const response_message = response.status + ':' + response.statusText
-          console.log(response_message);
-          window.alert('response_message=' + response_message);
+        .catch(error => {
+          // ネットワークエラーでも !response.ok でもここで処理できる
+          console.error('エラーが発生しました', error);
+          window.alert('エラーが発生しました。');
         });
       });
 
@@ -89,15 +110,19 @@
         fetch(`/users/${user_id}`, {
           method: 'DELETE'
         })
-        .then(function(response){
-          const response_message = response.status + ':' + response.statusText
-          console.log(response_message);
-          window.alert('response_message=' + response_message);
+        .then(response => {
+          if (!response.ok) {
+            console.error('response.ok:', response.ok);
+            console.error('response.status:', response.status);
+            console.error('response.statusText:', response.statusText);
+            throw new Error(response.statusText);
+          }
+          window.alert('情報を削除しました。');
         })
-        .catch(function(response){
-          const response_message = response.status + ':' + response.statusText
-          console.log(response_message);
-          window.alert('response_message=' + response_message);
+        .catch(error => {
+          // ネットワークエラーでも !response.ok でもここで処理できる
+          console.error('エラーが発生しました', error);
+          window.alert('エラーが発生しました。');
         });
       });
     </script>
