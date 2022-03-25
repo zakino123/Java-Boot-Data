@@ -12,6 +12,8 @@
     <!-- th:textで、タグのテキスト要素を出力できる -->
     <h1 th:text="'これはThymeleafですか？'">ｈｔｍｌ－見出し１</h1>
     <p>はい、SpringBootで推奨されています。</p>
+    <input type="text" id="input_text" name="name" maxlength="8" size="10">
+    <br>
     <button type="button" id="button_get">Fetch API : GET</button> | 
     <button type="button" id="button_post">Fetch API : POST</button>
 
@@ -31,7 +33,9 @@
       
       const button_post = document.getElementById('button_post');
       button_post.addEventListener('click',function(){
-        const user_data = { name: "post_name" }
+        const user_data = {}
+        const input_text = document.getElementById('input_text');
+        user_data[input_text.name] = input_text.value;
 
         fetch('/users', {
           method: 'POST',
