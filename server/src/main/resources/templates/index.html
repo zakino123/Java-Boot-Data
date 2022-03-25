@@ -12,10 +12,12 @@
     <!-- th:textで、タグのテキスト要素を出力できる -->
     <h1 th:text="'これはThymeleafですか？'">ｈｔｍｌ－見出し１</h1>
     <p>はい、SpringBootで推奨されています。</p>
+    <input type="text" id="input_id" name="id" maxlength="8" size="10">
     <input type="text" id="input_text" name="name" maxlength="8" size="10">
     <br>
     <button type="button" id="button_get">Fetch API : GET</button> | 
-    <button type="button" id="button_post">Fetch API : POST</button>
+    <button type="button" id="button_post">Fetch API : POST</button> | 
+    <button type="button" id="button_put">Fetch API : PUT</button>
 
     <script>
       const button_get = document.getElementById('button_get');
@@ -45,6 +47,33 @@
           body: JSON.stringify(user_data),
         })
         .then(function(response){
+          const response_message = response.status + ':' + response.statusText
+          console.log(response_message);
+          window.alert('response_message=' + response_message);
+        });
+      });
+
+      const button_put = document.getElementById('button_put');
+      button_put.addEventListener('click',function(){
+        const input_id = dovument.getElementById('input_id');
+        const user_id = input_id.value;
+        const user_data = {}
+        const input_text = document.getElementById('input_text');
+        user_data[input_text.name] = input_text.value;
+
+        fetch('/users/:user_id', {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(user_data),
+        })
+        .then(function(response){
+          const response_message = response.status + ':' + response.statusText
+          console.log(response_message);
+          window.alert('response_message=' + response_message);
+        })
+        .catch(function(response){
           const response_message = response.status + ':' + response.statusText
           console.log(response_message);
           window.alert('response_message=' + response_message);
