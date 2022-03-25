@@ -12,7 +12,7 @@
     <!-- th:textで、タグのテキスト要素を出力できる -->
     <h1 th:text="'これはThymeleafですか？'">ｈｔｍｌ－見出し１</h1>
     <p>はい、SpringBootで推奨されています。</p>
-    <input type="text" id="input_id" name="id" maxlength="8" size="10">
+    <input type="number" id="input_id" name="id" maxlength="8" size="10">
     <input type="text" id="input_text" name="name" maxlength="8" size="10">
     <br>
     <button type="button" id="button_get">Fetch API : GET</button> | 
@@ -55,13 +55,13 @@
 
       const button_put = document.getElementById('button_put');
       button_put.addEventListener('click',function(){
-        const input_id = dovument.getElementById('input_id');
+        const input_id = document.getElementById('input_id');
         const user_id = input_id.value;
         const user_data = {}
         const input_text = document.getElementById('input_text');
         user_data[input_text.name] = input_text.value;
 
-        fetch('/users/:user_id', {
+        fetch(`/users/${user_id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
